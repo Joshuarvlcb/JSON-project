@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   font-family: "Open Sans", sans-serif;
@@ -13,8 +12,7 @@
   width: 56.5vw;
   height: 100vh;
   background-color: #dfdfdf;
-  -webkit-clip-path: polygon(0 0, 100% 0, 81% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 81% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 81% 100%, 0 100%);
   position: relative;
 }
 
@@ -51,12 +49,8 @@
 
 .half .text-container .btn-con {
   width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .half .text-container .btn-con button {
@@ -91,21 +85,11 @@
   top: 0;
   height: 200px;
   color: #ff7b7b;
-  background: -webkit-gradient(linear, left top, right top, from(#f5996f), to(#db6d4c));
   background: linear-gradient(to right, #f5996f, #db6d4c);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: -webkit-transform ease 1s;
-  transition: -webkit-transform ease 1s;
+  justify-content: center;
+  align-items: center;
   transition: transform ease 1s;
-  transition: transform ease 1s, -webkit-transform ease 1s;
 }
 
 .half .slider-con .slider .card img {
@@ -118,15 +102,9 @@
 .half .slider-con .slider .btn-container {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .half .slider-con .slider .btn-container .back {
@@ -137,6 +115,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  color: #666665;
 }
 
 .half .slider-con .slider .btn-container .forward {
@@ -147,6 +126,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  color: #555455;
 }
 
 .left {
@@ -159,10 +139,8 @@
   width: 60vw;
   height: 100vh;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#f56f6f), to(plum));
   background: linear-gradient(to right, #f56f6f, plum);
-  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
   margin: 0px;
 }
 
@@ -171,8 +149,7 @@
   position: absolute;
   top: 50%;
   left: 58%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 1420px) {
@@ -225,7 +202,7 @@
 @media only screen and (max-height: 900px) {
   .half .text-container {
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 50px;
   }
   .half .text-container .para {
@@ -234,12 +211,64 @@
     color: #2e2e2e;
   }
   .half .logo-container img {
-    height: 60px;
+    height: 50px;
   }
   .half .slider-con {
     position: absolute;
     bottom: 40px;
     left: 50px;
+  }
+  .logo-container {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+@media only screen and (max-height: 780px) {
+  .half .text-container {
+    position: absolute;
+    top: 17%;
+    left: 50px;
+  }
+  .half .text-container .title {
+    margin-bottom: 10px;
+  }
+  .half .text-container .para {
+    margin-bottom: 20px;
+    width: 400px;
+    color: #2e2e2e;
+  }
+  .half .logo-container {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .half .logo-container img {
+    height: 50px;
+  }
+  .half .slider-con {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+  }
+  .half .slider-con .slider {
+    width: 300px;
+    height: 150px;
+  }
+  .half .slider-con .slider .card {
+    width: 300px;
+  }
+  .half .slider-con .slider .card img {
+    margin-left: 15px;
+    margin-bottom: 70px;
+    height: 90px;
+  }
+  .half .slider-con .slider .btn-container .forward {
+    font-size: 29px;
+  }
+  .half .slider-con .slider .btn-container .back {
+    font-size: 29px;
   }
 }
 
